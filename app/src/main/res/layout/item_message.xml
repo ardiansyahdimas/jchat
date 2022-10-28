@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pengirim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivMessenger"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_user"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/rounded_message_black"
+            android:maxWidth="250dp"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@id/tvMessage"
+            app:layout_constraintStart_toEndOf="@+id/ivMessenger"
+            app:layout_constraintTop_toTopOf="@+id/ivMessenger"
+            tools:text="This is a message" />
+
+        <TextView
+            android:id="@+id/triangle_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/triangle_message_black"
+            android:paddingRight="10dp"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:paddingLeft="10dp"
+            android:layout_marginEnd="-2dp"
+            android:rotationX="-50"
+            android:rotationY="180"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@id/tvMessage"
+            app:layout_constraintTop_toTopOf="@id/tvMessage"
+            tools:ignore="SpUsage" />
+
+        <com.github.curioustechizen.ago.RelativeTimeTextView
+            android:id="@+id/tvTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:maxLines="2"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/tvMessage"
+            app:layout_constraintStart_toStartOf="@id/tvMessage"
+            tools:text="Sekarang" />
+
+
+        <LinearLayout
+            android:id="@+id/ly_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:padding="5dp"
+            android:layout_marginEnd="5dp"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_message_black"
+            app:layout_constraintBottom_toTopOf="@id/tvMessage"
+            app:layout_constraintStart_toEndOf="@+id/ivMessenger"
+            app:layout_constraintTop_toTopOf="@+id/ivMessenger">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
+                <ImageView
+                    android:id="@+id/ms_img"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/triangle_blue_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/triangle_message_black"
+            android:paddingRight="10dp"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:visibility="gone"
+            android:paddingLeft="10dp"
+            android:layout_marginEnd="-2dp"
+            android:rotationX="50"
+            android:rotationY="180"
+            app:layout_constraintEnd_toStartOf="@id/ly_image"
+            app:layout_constraintTop_toTopOf="@id/ly_image"
+            tools:ignore="SpUsage" />
+
+        <com.github.curioustechizen.ago.RelativeTimeTextView
+            android:id="@+id/tvTimestamp_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:maxLines="2"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/ly_image"
+            app:layout_constraintStart_toStartOf="@id/ly_image"
+            tools:text="Sekarang" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pengirim2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivMessenger2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvMessage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="5dp"
+            android:maxWidth="250dp"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:background="@drawable/rounded_message_red"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@id/tvMessage2"
+            app:layout_constraintEnd_toStartOf="@+id/ivMessenger2"
+            app:layout_constraintTop_toTopOf="@+id/ivMessenger2"
+            tools:text="This is a message" />
+
+        <TextView
+            android:id="@+id/triangle_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/triangle_message_red"
+            android:paddingRight="10dp"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:paddingLeft="10dp"
+            android:layout_marginStart="-2dp"
+            android:rotationX="-50"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@id/tvMessage2"
+            app:layout_constraintTop_toTopOf="@id/tvMessage2"
+            tools:ignore="SpUsage" />
+
+        <com.github.curioustechizen.ago.RelativeTimeTextView
+            android:id="@+id/tvTimestamp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:maxLines="2"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/tvMessage2"
+            app:layout_constraintEnd_toEndOf="@id/tvMessage2"
+            tools:text="Sekarang" />
+
+
+        <LinearLayout
+            android:id="@+id/ly_image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_message_red"
+            app:layout_constraintBottom_toTopOf="@id/tvMessage2"
+            app:layout_constraintEnd_toStartOf="@+id/ivMessenger2"
+            app:layout_constraintTop_toTopOf="@+id/ivMessenger2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
+                <ImageView
+                    android:id="@+id/ms_img2"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/triangle_red_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/triangle_message_red"
+            android:paddingRight="10dp"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:textSize="16dp"
+            android:paddingLeft="10dp"
+            android:layout_marginStart="-2dp"
+            android:rotationX="-50"
+            app:layout_constraintStart_toEndOf="@id/ly_image2"
+            app:layout_constraintTop_toTopOf="@id/ly_image2"
+            tools:ignore="SpUsage" />
+
+        <com.github.curioustechizen.ago.RelativeTimeTextView
+            android:id="@+id/tvTimestamp_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:maxLines="2"
+            android:visibility="gone"
+            android:textSize="10sp"
+            app:layout_constraintTop_toBottomOf="@id/ly_image2"
+            app:layout_constraintEnd_toEndOf="@id/ly_image2"
+            tools:text="Sekarang" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

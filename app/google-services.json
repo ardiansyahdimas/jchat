@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "126005072513",
+    "project_id": "jchat-5d682",
+    "storage_bucket": "jchat-5d682.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126005072513:android:dd1fa516ddb36a897bb380",
+        "android_client_info": {
+          "package_name": "com.jumpa.jchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126005072513-4hhrhiebuodglfjecvkdfnhfgud58eke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp43aMd3F0610IvVSHXA982LDvONjg9II"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126005072513-4hhrhiebuodglfjecvkdfnhfgud58eke.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

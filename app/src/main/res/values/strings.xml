@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">jchat</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="message">message</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? <b>Sign Up</b></string>
+    <string name="sign_in">Sign In</string>
+</resources>

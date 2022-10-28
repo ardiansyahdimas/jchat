@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_500"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp">
+        <ImageView
+            android:id="@+id/add_image"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:enabled="false"
+            android:src="@drawable/ic_add_image" />
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="@string/message"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <ImageView
+            android:id="@+id/sendButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:enabled="false"
+            android:src="@drawable/ic_send" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messageRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:background="@android:color/white"
+        tools:listitem="@layout/item_message"/>
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container_login"
+    tools:context=".ui.LoginActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/img_login"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="chatting.json"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:id="@+id/label_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/purple_700"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/img_login"/>
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        app:layout_constraintTop_toBottomOf="@id/label_login"/>
+
+
+    <com.marlonmafra.android.widget.EditTextPassword
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:letterSpacing="0"
+        android:lines="1"
+        android:minHeight="48dp"
+        android:paddingEnd="10dp"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:hidePasswordIcon="@drawable/ic_hide_pwd"
+        app:iconPosition="right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email"
+        app:showPasswordIcon="@drawable/ic_show_pwd"
+        tools:ignore="Autofill,LabelFor,RtlSymmetry,SpeakableTextPresentCheck,TextContrastCheck" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/edt_password"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/sign_in"/>
+        <TextView
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:text="@string/don_t_have_an_account_sign_up"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
